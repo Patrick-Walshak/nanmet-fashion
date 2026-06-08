@@ -32,9 +32,9 @@ function HeroSection() {
       </div>
 
       {/* Right — photo placeholder */}
-      <div className="hidden md:flex items-center justify-center bg-linen animate-[fadeIn_1.2s_0.3s_both]">
-        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase opacity-40">
-          Your photo here
+      <div className="md:flex items-center justify-center bg-linen ">
+        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase">
+          <img src="src/assets/images/hero-img.jpg" alt="" />
         </p>
       </div>
 
