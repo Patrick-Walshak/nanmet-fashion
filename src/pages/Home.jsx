@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Marquee from '../components/ui/Marquee'
 import { useReveal } from '../hooks/useReveal'
 import { SERVICES, GALLERY_ITEMS, TESTIMONIALS } from '../data/content'
+import heroImg from '/public/images/hero-img.jpg'
+
 
 function HeroSection() {
   return (
@@ -33,8 +35,8 @@ function HeroSection() {
 
       {/* Right — photo placeholder */}
       <div className="hidden md:flex items-center justify-center bg-linen animate-[fadeIn_1.2s_0.3s_both]">
-        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase opacity-40">
-          Your photo here
+        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase">
+          <img src={heroImg} alt="hero" className="w-full h-full object-cover" />
         </p>
       </div>
 
@@ -83,17 +85,23 @@ function ServicesSection() {
           Our <em className="text-gold">services</em>
         </h2>
       </div>
-      <div ref={gridRef} className="reveal grid md:grid-cols-3 gap-px">
+      <div ref={gridRef} className="reveal grid md:grid-cols-4 gap-4 max-w-7.5xl mx-auto">
         {SERVICES.map(s => (
-          <div
-            key={s.number}
-            className="group bg-[#222220] border border-[#2e2e2c] p-10 hover:border-gold transition-colors duration-300 cursor-pointer"
-          >
-            <p className="font-serif text-3xl text-gold opacity-40 mb-6">{s.number}</p>
-            <h3 className="font-serif text-xl text-cream mb-4">{s.name}</h3>
-            <p className="text-sm leading-relaxed text-[#A09888] mb-6">{s.description}</p>
-            <p className="text-xs tracking-[0.2em] uppercase text-gold">{s.price}</p>
-          </div>
+           <div key={s.number} className="group bg-[#222220] border border-[#2e2e2c] hover:border-gold transition-colors duration-300">
+  
+  {/* Image at top */}
+  <div className="w-full h-96 overflow-hidden bg-[#2e2e2c]">
+  <img src={s.img} alt={s.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+</div>
+
+  {/* Text below */}
+  <div className="p-8">
+    <h3 className="font-serif text-xl text-cream mb-3">{s.name}</h3>
+    <p className="text-sm leading-relaxed text-[#A09888] mb-4">{s.description}</p>
+    <p className="text-xs tracking-[0.2em] uppercase text-gold">{s.price}</p>
+  </div>
+
+</div>
         ))}
       </div>
     </section>
