@@ -30,7 +30,7 @@ export const ABOUT = {
 export const SERVICES = [
   {
     number: '01',
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
     name: 'Bespoke Gowns',
     description:
       'Fully custom evening and bridal gowns. Every detail — silhouette, fabric, embellishment — designed around you from scratch.',
@@ -38,7 +38,7 @@ export const SERVICES = [
     whatsapp: '2348136070069',
   },
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
     number: '02',
     name: 'Tailored Suits',
     description:
@@ -46,7 +46,7 @@ export const SERVICES = [
     price: 'From ₦60,000',
   },
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
     number: '03',
     name: 'Casual Luxury',
     description:
@@ -54,7 +54,7 @@ export const SERVICES = [
     price: 'From ₦35,000',
   },
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
     number: '04',
     name: 'Alterations',
     description:
@@ -62,7 +62,7 @@ export const SERVICES = [
     price: 'From ₦8,000',
   },
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
     number: '05',
     name: 'Bridal Party',
     description:
@@ -70,7 +70,7 @@ export const SERVICES = [
     price: 'From ₦250,000',
   },
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
   number: '07',
   name: 'Ankara Styles',
   description: 'Bold, vibrant Ankara designs crafted into stunning modern silhouettes. From casual wear to statement pieces for every occasion.',
@@ -79,7 +79,7 @@ export const SERVICES = [
 
 
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
   number: '08',
   name: 'Aso-ebi Outfits',
   description: 'Coordinated family and event outfits sewn to perfection. Stand out as a unit while each piece is tailored to fit individually.',
@@ -89,7 +89,7 @@ export const SERVICES = [
 
 
  {
-  img: 'public/images/image-1.jpg',
+  img: '/images/image-1.jpg',
   number: '09',
   name: 'Corporate Wear',
   description: 'Sharp, professional outfits designed for the modern workplace. Blazers, trousers, skirts — looking powerful has never felt so effortless.',
@@ -98,7 +98,7 @@ export const SERVICES = [
 
 
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
   number: '10',
   name: 'Children\'s Wear',
   description: 'Adorable, well-fitted outfits for little ones. From birthdays to ceremonies — every child deserves to look their best.',
@@ -107,7 +107,7 @@ export const SERVICES = [
 
 
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
   number: '12',
   name: 'Rush Orders',
   description: 'Need something urgently? We handle last-minute orders with the same quality and care — just faster. Available on request.',
@@ -116,7 +116,7 @@ export const SERVICES = [
 
 
   {
-    img: 'public/images/image-1.jpg',
+    img: '/images/image-1.jpg',
   number: '11',
   name: 'Accessories',
   description: 'Custom fabric bags, headbands, bow ties, and matching accessories to complete any look from head to toe.',
@@ -124,8 +124,7 @@ export const SERVICES = [
 },
 
   {
-    img: 'public/images/image-1.jpg',
-    img: 'public/images/image-1.jpg', 
+    img: '/images/image-1.jpg', 
     number: '06',
     name: 'Consultation',
     description:
