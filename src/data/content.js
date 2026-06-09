@@ -13,6 +13,20 @@ export const NAV_LINKS = [
   { label: 'Contact',  href: '/contact'   },
 ]
 
+export const ABOUT = {
+  name: '[Designer Name]',
+  role: 'Fashion Designer & Tailor',
+  headline: 'Fashion is not just clothing — it is identity',
+  intro: 'A trained fashion designer and tailor based in Nigeria, with a passion for creating garments that celebrate the woman wearing them.',
+  bio: 'After completing her training, she launched her own label with a simple belief: that every woman deserves to feel extraordinary in what she wears.',
+  stats: [
+    { value: '3+',   label: 'Years of training' },
+    { value: '50+',  label: 'Pieces crafted'     },
+    { value: '100%', label: 'Bespoke & handmade' },
+  ],
+  photo: null,
+}
+
 export const SERVICES = [
   {
     number: '01',
@@ -21,6 +35,7 @@ export const SERVICES = [
     description:
       'Fully custom evening and bridal gowns. Every detail — silhouette, fabric, embellishment — designed around you from scratch.',
     price: 'From ₦85,000',
+    whatsapp: '2348136070069',
   },
   {
     img: 'public/images/image-1.jpg',

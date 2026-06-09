@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Marquee from '../components/ui/Marquee'
 import { useReveal } from '../hooks/useReveal'
-import { SERVICES, GALLERY_ITEMS, TESTIMONIALS } from '../data/content'
+// import { SERVICES, GALLERY_ITEMS, TESTIMONIALS } from '../data/content'
 import heroImg from '/public/images/hero-img.jpg'
+import { SERVICES, TESTIMONIALS, ABOUT, BRAND } from '../data/content'
 
 
 function HeroSection() {
@@ -98,7 +99,21 @@ function ServicesSection() {
   <div className="p-8">
     <h3 className="font-serif text-xl text-cream mb-3">{s.name}</h3>
     <p className="text-sm leading-relaxed text-[#A09888] mb-4">{s.description}</p>
+    {/* <p className="text-xs tracking-[0.2em] uppercase text-gold">{s.price} </p> */}
     <p className="text-xs tracking-[0.2em] uppercase text-gold">{s.price}</p>
+
+{/* WhatsApp button — separate, below the price */}
+
+    <a href={`https://wa.me/${BRAND.whatsapp.replace(/\D/g,'')}?text=${encodeURIComponent(`Hi, I'm interested in your ${s.name} service. I'd like to place an order.`)}`}
+      target="_blank"
+      rel="noreferrer"
+      className="mt-6 flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 text-white text-xs tracking-[0.2em] uppercase transition-colors duration-200"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z"/>
+      </svg>
+      Book Now
+    </a>
   </div>
 
 </div>
