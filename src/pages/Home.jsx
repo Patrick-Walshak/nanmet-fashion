@@ -32,9 +32,9 @@ function HeroSection() {
       </div>
 
       {/* Right — photo placeholder */}
-      <div className="md:flex items-center justify-center bg-linen ">
-        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase">
-          <img src="src/assets/images/hero-img.jpg" alt="" />
+      <div className="hidden md:flex items-center justify-center bg-linen animate-[fadeIn_1.2s_0.3s_both]">
+        <p className="font-serif text-sm text-taupe tracking-[0.2em] uppercase opacity-40">
+          Your photo here
         </p>
       </div>
 
@@ -67,41 +67,6 @@ function AboutSection() {
           </p>
           <a href="#contact" className="btn-ghost">Book a consultation</a>
         </div>
-      </div>
-    </section>
-  )
-}
-
-function GallerySection() {
-  const headRef = useReveal()
-  const gridRef = useReveal()
-  return (
-    <section id="gallery" className="px-8 md:px-16 pb-24">
-      <div ref={headRef} className="reveal flex items-end justify-between mb-12">
-        <div>
-          <span className="section-label">The lookbook</span>
-          <h2 className="font-serif text-4xl font-normal text-black">
-            Recent <em className="text-taupe">collections</em>
-          </h2>
-        </div>
-        <a href="/gallery" className="btn-ghost hidden md:inline-block">View all work</a>
-      </div>
-
-      <div ref={gridRef} className="reveal grid grid-cols-2 md:grid-cols-3 gap-4">
-        {GALLERY_ITEMS.map(item => (
-          <div
-            key={item.id}
-            className={`group relative overflow-hidden bg-linen cursor-pointer ${item.span} ${item.aspect}`}
-          >
-            <div className="absolute inset-0 flex items-center justify-center flex-col gap-2">
-              <span className="text-xs tracking-[0.2em] uppercase text-taupe opacity-40">{item.label}</span>
-            </div>
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span className="text-xs tracking-[0.2em] uppercase text-cream">View</span>
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   )
@@ -190,7 +155,6 @@ export default function Home() {
       <HeroSection />
       <Marquee />
       <AboutSection />
-      <GallerySection />
       <ServicesSection />
       <TestimonialSection />
       <ContactPreview />

@@ -1,5 +1,5 @@
 export const BRAND = {
-  name: 'Atelier',
+  name: 'Nanmet & Stitches',
   tagline: 'Bespoke tailoring & design',
   email: 'hello@atelier.com',
   whatsapp: '+234 000 000 0000',
@@ -8,7 +8,6 @@ export const BRAND = {
 }
 
 export const NAV_LINKS = [
-  { label: 'Gallery',  href: '/#gallery'  },
   { label: 'Services', href: '/#services' },
   { label: 'About',    href: '/#about'    },
   { label: 'Contact',  href: '/contact'   },
