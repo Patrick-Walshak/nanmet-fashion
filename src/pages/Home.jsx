@@ -91,7 +91,7 @@ function ServicesSection() {
            <div key={s.number} className="group bg-[#222220] border border-[#2e2e2c] hover:border-gold transition-colors duration-300">
   
   {/* Image at top */}
-  <div className="w-full h-96 overflow-hidden bg-[#2e2e2c]">
+  <div className="w-full h-64 md:h-96 overflow-hidden bg-[#2e2e2c]">
   <img src={s.img} alt={s.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 </div>
 
