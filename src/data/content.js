@@ -2,7 +2,7 @@ export const BRAND = {
   name: 'Nanmet & Stitches',
   tagline: 'Bespoke tailoring & design',
   email: 'hello@atelier.com',
-  whatsapp: '+234 000 000 0000',
+  whatsapp: '+234 8136070069',
   instagram: 'https://instagram.com/',
   tiktok: 'https://tiktok.com/',
 }
